@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+{% block main %}
+{% blocktrans %}
+<h2>Congratulations!</h2>
+<p>
+    欢迎使用新的夹层支持网站。以下是一些快速入门，可以帮助您入门：
+</p>
+<ul>
+    <li><a href="/admin/">登录到管理界面</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/content-architecture.html">创建自定义页面类型</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html#templates">修改HTML模板</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html#why-isn-t-the-homepage-a-page-object-i-can-edit-via-the-admin">更改此主页</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html">其他常见问题</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/configuration.html#default-settings">完整设置列表</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/deployment.html">部署到生产服务器</a></li>
+</ul>
+{% endblocktrans %}
+{% endblock %}
