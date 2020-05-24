@@ -84,7 +84,7 @@ from django.utils.translation import ugettext_lazy as _
 # If True, the django-modeltranslation will be added to the
 # INSTALLED_APPS setting.
 USE_MODELTRANSLATION = False
-
+SECRET_KEY = '9eabec17-4f5f-4232-8d3b-f3ad62769ebc' # ######
 
 ########################
 # MAIN DJANGO SETTINGS #
