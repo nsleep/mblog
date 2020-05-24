@@ -29,7 +29,6 @@ python manage.py createdb --noinput
 python manage.py runserver
 ```
 
-
 > 注：该`createdb`命令是使用Django命令的快捷方式 `migrate`，该命令还将安装一些演示内容，例如联系表格，图片库等。如果您想省略此步骤，请将该`--nodata`选项与`createdb`一起使用。
 
 
