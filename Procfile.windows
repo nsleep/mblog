@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 web: python manage.py runserver 
+=======
+web: python manage.py runserver 127.0.0.1:80
+>>>>>>> 699db5a5149066fa8c3477e8ce98f70eba6eab94
