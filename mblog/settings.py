@@ -84,7 +84,7 @@ from django.utils.translation import ugettext_lazy as _
 # If True, the django-modeltranslation will be added to the
 # INSTALLED_APPS setting.
 USE_MODELTRANSLATION = False
-SECRET_KEY = '9eabec17-4f5f-4232-8d3b-f3ad62769ebc' # ######
+
 
 ########################
 # MAIN DJANGO SETTINGS #
@@ -92,7 +92,7 @@ SECRET_KEY = '9eabec17-4f5f-4232-8d3b-f3ad62769ebc' # ######
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -108,7 +108,7 @@ USE_TZ = True
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = "zh-hans"
+LANGUAGE_CODE = "en"
 
 # Supported languages
 LANGUAGES = (
@@ -118,7 +118,7 @@ LANGUAGES = (
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
 # are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py
-DEBUG = False
+DEBUG = True
 
 # Whether a user's session cookie expires when the Web browser is closed.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
