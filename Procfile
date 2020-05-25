@@ -1,1 +1,1 @@
-web: python3 manage.py runserver 0.0.0.0:8083
+web: gunicorn mblog.wsgi --log-file -
