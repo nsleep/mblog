@@ -11,9 +11,9 @@ DATABASES = {
     "default": {
         # Ends with "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
         "ENGINE": "django.db.backends.sqlite3",
-        #"NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
         # DB name or path to database file if using sqlite3.
-        "NAME": "/tmp/dev.db",
+        #"NAME": "dev.db",
         # Not used with sqlite3. 不适用sqlite3
         "USER": "",
         # Not used with sqlite3.
