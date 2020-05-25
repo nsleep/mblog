@@ -13,7 +13,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.sqlite3",
         #"NAME": os.path.join(BASE_DIR, "db.sqlite3"),
         # DB name or path to database file if using sqlite3.
-        "NAME": "dev.db",
+        "NAME": "/tmp/dev.db",
         # Not used with sqlite3. 不适用sqlite3
         "USER": "",
         # Not used with sqlite3.
