@@ -129,7 +129,7 @@ SITE_ID = 1
 # to load the internationalization machinery.
 USE_I18N = False
 
-AUTHENTICATION_BACKENDS = ("mezzanine.core.auth_backends.MezzanineBackend",)
+AUTHENTICATION_BACKENDS = ("mezzanine.co re.auth_backends.MezzanineBackend",)
 
 # The numeric mode to set newly-uploaded files to. The value should be
 # a mode you'd pass directly to os.chmod.
@@ -181,6 +181,7 @@ STATIC_URL = "/static/"
 # Example: "/home/media/media.lawrence.com/static/"
 #STATIC_ROOT = os.path.join(PROJECT_ROOT, STATIC_URL.strip("/"))
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_ROOT = 'staticfiles'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
