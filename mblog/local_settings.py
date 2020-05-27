@@ -1,7 +1,7 @@
 # This file is exec'd from settings.py, so it has access to and can
 # modify all the variables in settings.py.
 
-DEBUG = True
+DEBUG = False
 
 # Make these unique, and don't share it with anybody.
 SECRET_KEY = "8)_fhs^$tf-y083*i#zre2e3$z(zztus+o=jyu3=@)#2@w2qy*"
@@ -26,8 +26,8 @@ DATABASES = {
 }
 
 # heroku 只支持postgrespool数据库 来自：https://www.jianshu.com/p/610c670eabed
-import dj_database_url
-DATABASES['default'] = dj_database_url.config()
+#import dj_database_url
+#DATABASES['default'] = dj_database_url.config()
 
 # Allowed development hosts
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "::1","simon-mblog.herokuapp.com"]
