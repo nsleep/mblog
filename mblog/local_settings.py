@@ -26,8 +26,8 @@ DATABASES = {
 }
 
 # heroku 只支持postgrespool数据库 来自：https://www.jianshu.com/p/610c670eabed
-#import dj_database_url
-#DATABASES['default'] = dj_database_url.config()
+import dj_database_url
+DATABASES['default'] = dj_database_url.config()
 
 # Allowed development hosts
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "::1","simon-mblog.herokuapp.com"]
