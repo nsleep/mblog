@@ -143,7 +143,7 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 DATABASES = {
     "default": {
         # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
-        "ENGINE": "django.db.backends.",
+        "ENGINE": "django.db.backends.sqlite3",
         # DB name or path to database file if using sqlite3.
         "NAME": "",
         # Not used with sqlite3.
@@ -286,8 +286,10 @@ MIDDLEWARE = (
     "mezzanine.core.middleware.SitePermissionMiddleware",
     "mezzanine.pages.middleware.PageMiddleware",
     "mezzanine.core.middleware.FetchFromCacheMiddleware",
+	
+	'whitenoise.middleware.WhiteNoiseMiddleware', # ######
 )
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  # ######
 if DJANGO_VERSION < (1, 10):
     MIDDLEWARE_CLASSES = MIDDLEWARE
     del MIDDLEWARE
