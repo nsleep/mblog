@@ -5,3 +5,4 @@ django-postgrespool
 psycopg2
 SQLAlchemy
 whitenoise
+django-heroku
