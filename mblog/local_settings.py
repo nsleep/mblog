@@ -54,5 +54,7 @@ ALLOWED_HOSTS = ["localhost", "127.0.0.1", "::1","simon-mblog.herokuapp.com"]
 #     "NEVERCACHE_KEY": NEVERCACHE_KEY,
 # }
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = "/static/"
 import django_heroku
 django_heroku.settings(locals())
