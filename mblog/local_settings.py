@@ -3,7 +3,7 @@
 # This file is exec'd from settings.py, so it has access to and can
 # modify all the variables in settings.py.
 
-DEBUG = False
+DEBUG = True
 
 # Make these unique, and don't share it with anybody.
 SECRET_KEY = "8)_fhs^$tf-y083*i#zre2e3$z(zztus+o=jyu3=@)#2@w2qy*"
